@@ -1,0 +1,52 @@
+### Variables 
+@apiurl = http://localhost:8080
+//@apiurl = https://go-megasena.onrender.com
+//@apiurl=https://petite-vania-macakosoftware-524c0c62.koyeb.app
+
+
+### 
+GET {{apiurl}}/convites/gerar?qtd=80
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTA3MjgzNDgsInN1YiI6MX0.CViAJ3f1xFhfcnlJuLanX7X8a7XqLqM2iNJXnD6KZ_w
+
+###
+GET {{apiurl}}/convites
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjU1MDM0ODYsInN1YiI6MX0.66g8sSCc1rOmJOyKP7Tn45kOMlxHbmrDtaiUZFb_NYE
+
+###
+GET {{apiurl}}/convites/validar-convite?id=6d8874c4-1f6a-471d-b365-21021c3e6974
+
+###
+POST {{apiurl}}/usuarios/cadastrar
+Content-Type: application/json
+
+{
+   "user_id":"cleiton",
+   "password":"testeteste"   
+}
+
+###
+POST {{apiurl}}/usuarios/autenticar
+Content-Type: application/json
+
+{
+   "user_id":"cleiton",
+   "password":"testeteste"   
+}
+
+###
+GET {{apiurl}}/convites-auth
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjUxMDk0MDgsInN1YiI6MX0.UeJ7HGNnY1_NWI-fJ_6g47L_gBDSYPPH4OtJRjzKLLI
+
+###
+GET {{apiurl}}/participantes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjU1MDM0ODYsInN1YiI6MX0.66g8sSCc1rOmJOyKP7Tn45kOMlxHbmrDtaiUZFb_NYE
+
+###
+GET {{apiurl}}/jogos/listar-numeros
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzU1Mjg0MDgsInN1YiI6MX0.97QMDxrTFQ3fqRbUAPRXFw4MHtLhDd0it3SOZUtmS1k
+Content-Type: application/json
+
+{
+   "quantidade_cartoes": 10,
+   "quantidade_numeros": 7
+}
