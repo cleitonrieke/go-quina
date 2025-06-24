@@ -50,8 +50,8 @@ func (h Handler) ResumoNumerosMegaSena(w http.ResponseWriter, r *http.Request) {
 	var participantes []models.Participante
 	h.DB.Find(&participantes)
 
-	tabNumeros := make(map[int]int, 60)
-	for i := 0; i < 60; i++ {
+	tabNumeros := make(map[int]int, 80)
+	for i := 0; i < 80; i++ {
 		tabNumeros[i+1] = 0
 	}
 
